@@ -1,1 +1,19 @@
+.rhombus {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid blue;
+  margin: 50px auto;
+}
 
+.rhombus::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid blue;
+  margin-left: -100px;
+}
